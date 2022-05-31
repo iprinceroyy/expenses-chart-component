@@ -1,43 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Expenses chart component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <!-- CSS Main file  -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>Frontend Mentor | Expenses chart component</title>
+
 </head>
+
 <body>
+    <main class="container">
+        <h1 class="sr-only"></h1>
+        <div class="card">
+            <section class="balance">
+                <h2>My balance <span>$921.48</span></h2>
+                <img src="assets/images/logo.svg" alt="logo">
+            </section>
 
-  My balance
-  $921.48
+            <section class="Spending">
+                <h3>Spending - Last 7 Days</h3>
+                <div class="analysis">
+                    <div>mon </div>
+                    <div>tue</div>
+                    <div>wed</div>
+                    <div>thu</div>
+                    <div>fri</div>
+                    <div>sat</div>
+                    <div>sun</div>
+                </div>
+            </section>
+        </div>
+    </main>
 
-  Spending - Last 7 days
+    <!-- 
 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
+
+  
 
   Total this month
   $478.33
 
   +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  from last month -->
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
+    </div>
 </body>
+
 </html>
