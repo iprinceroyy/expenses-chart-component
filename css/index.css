@@ -16,6 +16,7 @@
   font-size: 1.125rem !important;
   padding: 5rem 2rem;
   min-height: 100vh;
+  line-height: 1.5;
 }
 
 .card {
@@ -30,7 +31,7 @@
   justify-content: space-between;
   border-radius: 10px;
   color: #f8e9dd;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
 }
 .balance h2 {
   font-size: 1rem;
@@ -44,6 +45,13 @@
 }
 .balance .logo {
   width: 3rem;
+}
+
+.spending {
+  background-color: white;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -40,6 +40,7 @@ $fw-700: 700;
     font-size: $font-size;
     padding: 5rem 2rem;
     min-height: 100vh;
+    line-height: 1.5;
 }
 
 .card {
@@ -54,7 +55,7 @@ $fw-700: 700;
     justify-content: space-between;
     border-radius: 10px;
     color: $cream;
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     h2 {
         font-size: 1rem;
         font-weight: $fw-400;
@@ -70,4 +71,9 @@ $fw-700: 700;
     }
 }
 
-.spending {}
+.spending {
+    background-color: white;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+}
