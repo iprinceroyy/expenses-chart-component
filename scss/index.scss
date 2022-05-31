@@ -22,13 +22,52 @@ $very-pale-orange: hsl(33, 100%, 98%);
 
 /*  Body Copy  */
 
-$font-size: 18px !important;
+$font-size: 1.125rem !important;
 
 /*  Font  */
 
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
-$font-amily: "DM Sans",
+$font-family: "DM Sans",
 sans-serif;
 $fw-400: 400;
 $fw-700: 700;
-.container {}
+
+/*  Main  */
+
+.container {
+    background-color: $cream;
+    font-family: $font-family;
+    font-size: $font-size;
+    padding: 5rem 2rem;
+    min-height: 100vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.balance {
+    background-color: $soft-red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 10px;
+    color: $cream;
+    padding: 0.5rem 1rem;
+    h2 {
+        font-size: 1rem;
+        font-weight: $fw-400;
+    }
+    span {
+        display: block;
+        font-size: $font-size;
+        font-weight: $fw-700;
+        color: #fff;
+    }
+    .logo {
+        width: 3rem;
+    }
+}
+
+.spending {}

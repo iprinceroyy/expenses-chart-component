@@ -9,5 +9,41 @@
 /*  Body Copy  */
 /*  Font  */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+/*  Main  */
+.container {
+  background-color: #f8e9dd;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.125rem !important;
+  padding: 5rem 2rem;
+  min-height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.balance {
+  background-color: #ec775f;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 10px;
+  color: #f8e9dd;
+  padding: 0.5rem 1rem;
+}
+.balance h2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.balance span {
+  display: block;
+  font-size: 1.125rem !important;
+  font-weight: 700;
+  color: #fff;
+}
+.balance .logo {
+  width: 3rem;
+}
 
 /*# sourceMappingURL=index.css.map */
