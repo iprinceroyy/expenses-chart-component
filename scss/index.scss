@@ -71,9 +71,57 @@ $fw-700: 700;
     }
 }
 
+
+/*  Spending  */
+
 .spending {
     background-color: white;
     margin: 1rem 0;
     padding: 1rem;
+    color: $dark-brown;
     border-radius: 10px;
+}
+
+.analysis {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 3rem;
+    div {
+        width: 2.5rem;
+        background-color: $soft-red;
+        border-radius: 3px;
+    }
+    div:nth-of-type(1) {
+        height: 3rem;
+    }
+    div:nth-of-type(2) {
+        height: 6rem;
+    }
+    div:nth-of-type(3) {
+        height: 9rem;
+        background-color: $cyan;
+    }
+    div:nth-of-type(4) {
+        height: 5rem;
+    }
+    div:nth-of-type(5) {
+        height: 4rem;
+    }
+    div:nth-of-type(6) {
+        height: 7rem;
+    }
+    div:nth-of-type(7) {
+        height: 4.5rem;
+    }
+}
+
+hr {
+    margin: 2rem 0;
+    border: 1.5px solid $cream;
+}
+
+.total>p {
+    color: gray;
 }
