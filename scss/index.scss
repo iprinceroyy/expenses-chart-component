@@ -60,7 +60,7 @@ $fw-700: 700;
         font-size: 1rem;
         font-weight: $fw-400;
     }
-    span {
+    .amt {
         display: block;
         font-size: $font-size;
         font-weight: $fw-700;
@@ -86,44 +86,63 @@ $fw-700: 700;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
     margin-top: 3rem;
-    div {
+    // Dsiplay popper & bar center at cross axis
+    >div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .bar {
         width: 2.5rem;
         background-color: $soft-red;
         border-radius: 3px;
-        color: rgba($dark-brown, 0.6);
         font-size: 1rem;
         text-align: center;
+        +p {
+            color: rgba($dark-brown, 0.6);
+        }
     }
-    div:nth-of-type(1) {
+    // Popper to be popped on hover
+    .popper {
+        border-radius: 4px;
+        margin-bottom: 1rem;
+        padding: {
+            top: 0.1em;
+            right: 0.7em;
+            bottom: 0.1em;
+            left: 0.7em;
+        }
+        background-color: black;
+        text-align: center;
+        .data {
+            font-size: 1rem;
+            color: white;
+        }
+    }
+    .mon {
         height: 3.5rem;
-        padding-top: 3.5rem;
     }
-    div:nth-of-type(2) {
+    .tue {
         height: 7rem;
-        padding-top: 7rem;
     }
-    div:nth-of-type(3) {
+    .wed {
         height: 10rem;
         background-color: $cyan;
-        padding-top: 10rem;
     }
-    div:nth-of-type(4) {
+    .thu {
         height: 6rem;
-        padding-top: 6rem;
     }
-    div:nth-of-type(5) {
+    .fri {
         height: 4.5rem;
-        padding-top: 4.5rem;
     }
-    div:nth-of-type(6) {
+    .sat {
         height: 8rem;
         padding-top: 8rem;
     }
-    div:nth-of-type(7) {
+    .sun {
         height: 5rem;
-        padding-top: 5rem;
     }
 }
 
@@ -150,7 +169,7 @@ hr {
         text-align: right;
         line-height: 1.2;
     }
-    span {
+    .month {
         display: block;
         font-weight: $fw-400;
         opacity: 0.6;

@@ -23,27 +23,56 @@
         <h1 class="sr-only"></h1>
         <div class="card">
             <section class="balance">
-                <h2>My balance <span>$921.48</span></h2>
+                <h2>My balance <span class="amt">$921.48</span></h2>
                 <img class="logo" src="assets/images/logo.svg" alt="logo">
             </section>
 
             <section class="spending">
                 <h3>Spending - Last 7 Days</h3>
                 <div class="analysis">
-                    <div>mon</div>
-                    <div>tue</div>
-                    <div>wed</div>
-                    <div>thu</div>
-                    <div>fri</div>
-                    <div>sat</div>
-                    <div>sun</div>
+                    <div>
+                        <div class="popper"><span class="data">$67</span></div>
+                        <div class="bar mon"></div>
+                        <p>mon</p>
+                    </div>
+                    <div>
+                        <div class="popper"><span></span></div>
+                        <div class="bar tue"></div>
+                        <p>tue</p>
+                    </div>
+                    <div>
+                        <div class="popper"><span class="data">$52.36</span></div>
+                        <div class="bar wed"></div>
+                        <p>wed</p>
+                    </div>
+                    <div>
+                        <div class="popper"><span></span></div>
+                        <div class="bar thu"></div>
+                        <p>thu</p>
+                    </div>
+                    <div>
+                        <div class="popper"><span></span></div>
+                        <div class="bar fri"></div>
+                        <p>fri</p>
+                    </div>
+                    <div>
+                        <div class="popper"><span></span></div>
+                        <div class="bar sat"></div>
+                        <p>sat</p>
+                    </div>
+                    <div>
+                        <div class="popper"><span></span></div>
+                        <div class="bar sun"></div>
+                        <p>sun</p>
+                    </div>
+
                 </div>
                 <hr>
                 <p>Total this month</p>
 
                 <div class="total">
                     <h4>$478.33</h4>
-                    <p>+2.4% <span>from last month</span></p>
+                    <p>+2.4% <span class="month">from last month</span></p>
                 </div>
             </section>
         </div>
@@ -56,6 +85,8 @@
         </div>
     </footer>
 
+    <script src="./data.json"></script>
+    <script src="./app.js"></script>
 </body>
 
 </html>
