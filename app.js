@@ -1,8 +1,12 @@
 "use strict";
-const dataFile = async() => {
-    const url = "./data.json";
-    const response = await fetch(url);
-    const data = await response.json();
-    console.log(data);
-};
-dataFile();
+
+fetch("data.json")
+    .then((Response) => Response.json())
+    .then((jsonData) => {
+        jsonData.forEach((data) => {
+            console.log(data);
+            document.querySelector(
+                `.js-${data.day}`
+            ).textContent = `$${data.amount}`;
+        });
+    });
