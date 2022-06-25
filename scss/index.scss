@@ -38,12 +38,13 @@ $fw-700: 700;
     background-color: $cream;
     font-family: $font-family;
     font-size: $font-size;
-    padding: 5rem 2rem;
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     line-height: 1.5;
-    //display: flex;
-    //flex-direction: column;
-    //align-items: center;
 }
 
 .card {
@@ -84,7 +85,6 @@ $fw-700: 700;
     color: $dark-brown;
     border-radius: 10px;
     overflow: hidden;
-    white-space: nowrap;
 }
 
 .analysis {
@@ -92,7 +92,7 @@ $fw-700: 700;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 3rem;
-    // Dsiplay popper & bar center at cross axis
+    /* Dsiplay popper & bar center at cross axis */
     >div {
         display: flex;
         flex-direction: column;
@@ -110,7 +110,7 @@ $fw-700: 700;
             color: rgba($dark-brown, 0.6);
         }
     }
-    // Popper to be popped on hover
+    /* Popper to be popped on hover */
     .popper {
         border-radius: 4px;
         margin-bottom: 0.5rem;
@@ -129,7 +129,7 @@ $fw-700: 700;
             color: white;
         }
     }
-    // Popper animation
+    /* Popper animation */
     .animate-grow {
         animation-name: grow;
         animation-duration: 1s;
@@ -184,16 +184,27 @@ $fw-700: 700;
     }
 }
 
-// Hover Effect to show data
+
+/* Hover Effect to show data */
+
 .bar:hover,
 .bar:active {
     cursor: pointer;
     opacity: 0.7;
 }
 
+
+/* Line */
+
 hr {
     margin: 2rem 0;
-    border: 1.5px solid $cream;
+    background-color: $cream;
+    border: {
+        width: 1.2px;
+        style: solid;
+        color: $cream;
+        radius: 10px;
+    }
     +p {
         font-size: 1rem;
         opacity: 0.6;
