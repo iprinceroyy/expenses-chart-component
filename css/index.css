@@ -17,9 +17,6 @@
   padding: 5rem 2rem;
   min-height: 100vh;
   line-height: 1.5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .card {
@@ -54,7 +51,7 @@
 .spending {
   background-color: white;
   margin: 1rem 0;
-  padding: 0.8rem;
+  padding: 1rem;
   color: #382314;
   border-radius: 10px;
   overflow: hidden;
@@ -87,10 +84,11 @@
 .analysis .popper {
   border-radius: 4px;
   margin-bottom: 0.5rem;
+  visibility: hidden;
   padding-top: 0.1em;
-  padding-right: 0.4em;
+  padding-right: 0.45em;
   padding-bottom: 0.1em;
-  padding-left: 0.4em;
+  padding-left: 0.45em;
   background-color: black;
   text-align: center;
 }
@@ -116,7 +114,6 @@
 }
 .analysis .sat {
   height: 8rem;
-  padding-top: 8rem;
 }
 .analysis .sun {
   height: 5rem;

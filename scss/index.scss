@@ -41,9 +41,9 @@ $fw-700: 700;
     padding: 5rem 2rem;
     min-height: 100vh;
     line-height: 1.5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    //display: flex;
+    //flex-direction: column;
+    //align-items: center;
 }
 
 .card {
@@ -80,7 +80,7 @@ $fw-700: 700;
 .spending {
     background-color: white;
     margin: 1rem 0;
-    padding: 0.8rem;
+    padding: 1rem;
     color: $dark-brown;
     border-radius: 10px;
     overflow: hidden;
@@ -114,11 +114,12 @@ $fw-700: 700;
     .popper {
         border-radius: 4px;
         margin-bottom: 0.5rem;
+        visibility: hidden;
         padding: {
             top: 0.1em;
-            right: 0.4em;
+            right: 0.45em;
             bottom: 0.1em;
-            left: 0.4em;
+            left: 0.45em;
         }
         background-color: black;
         text-align: center;
@@ -145,7 +146,6 @@ $fw-700: 700;
     }
     .sat {
         height: 8rem;
-        padding-top: 8rem;
     }
     .sun {
         height: 5rem;
