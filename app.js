@@ -16,14 +16,19 @@ fetch("data.json")
                     `.popper-${e.path[0].classList[1]}`
                 );
 
-                // if bar is once clicked, then hide popper else show
-                clicked
-                    ?
-                    (popper.style.visibility = "hidden") :
-                    (popper.style.visibility = "visible");
+                // If bar is once clicked, then hide popper else show
+                if (!clicked) {
+                    popper.classList.add("animate-grow");
+                    popper.classList.remove("animate-shrink");
+                } else {
+                    popper.classList.add("animate-shrink");
+                    popper.classList.remove("animate-grow");
+                }
 
-                // Change state of clicked
+                // Change the state of clicked
                 clicked = !clicked;
             });
         });
     });
+
+function grow() {}

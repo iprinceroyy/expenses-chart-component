@@ -84,7 +84,7 @@
 .analysis .popper {
   border-radius: 4px;
   margin-bottom: 0.5rem;
-  visibility: hidden;
+  transform: scale(0);
   padding-top: 0.1em;
   padding-right: 0.45em;
   padding-bottom: 0.1em;
@@ -94,7 +94,20 @@
 }
 .analysis .popper .data {
   font-size: 0.7rem;
+  font-weight: 700;
   color: white;
+}
+.analysis .animate-grow {
+  animation-name: grow;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+.analysis .animate-shrink {
+  animation-name: shrink;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
 }
 .analysis .mon {
   height: 3.5rem;
@@ -119,6 +132,22 @@
   height: 5rem;
 }
 
+@keyframes grow {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes shrink {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
 .bar:hover,
 .bar:active {
   cursor: pointer;

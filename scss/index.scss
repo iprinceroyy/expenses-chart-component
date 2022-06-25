@@ -114,7 +114,7 @@ $fw-700: 700;
     .popper {
         border-radius: 4px;
         margin-bottom: 0.5rem;
-        visibility: hidden;
+        transform: scale(0);
         padding: {
             top: 0.1em;
             right: 0.45em;
@@ -125,8 +125,22 @@ $fw-700: 700;
         text-align: center;
         .data {
             font-size: 0.7rem;
+            font-weight: $fw-700;
             color: white;
         }
+    }
+    // Popper animation
+    .animate-grow {
+        animation-name: grow;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+    }
+    .animate-shrink {
+        animation-name: shrink;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
     }
     .mon {
         height: 3.5rem;
@@ -149,6 +163,24 @@ $fw-700: 700;
     }
     .sun {
         height: 5rem;
+    }
+}
+
+@keyframes grow {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes shrink {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0);
     }
 }
 
