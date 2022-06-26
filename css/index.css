@@ -91,12 +91,13 @@
   justify-content: flex-end;
 }
 .analysis .bar {
-  width: max(3.5vw, 2.1rem);
+  width: max(3.2vw, 2.1rem);
   background-color: #ec775f;
   border-radius: 3px;
   text-align: center;
 }
 .analysis .bar + p {
+  margin-block-start: 0.3rem;
   font-size: 1rem;
   color: rgba(56, 35, 20, 0.6);
 }
@@ -104,17 +105,15 @@
   border-radius: 4px;
   margin-bottom: 0.5rem;
   transform: scale(0);
-  padding-top: 0.1em;
-  padding-right: 0.45em;
-  padding-bottom: 0.1em;
-  padding-left: 0.45em;
+  padding-inline: min(1.5vw, 0.5rem);
+  padding-block: min(2vh, 0.1rem);
   background-color: black;
-  text-align: center;
 }
 .analysis .popper .data {
-  font-size: 0.7rem;
+  font-size: clamp(0.7rem, 0.55vw + 0.56rem, 1rem);
   font-weight: 700;
   color: white;
+  text-align: center;
 }
 .analysis .animate-grow {
   animation-name: grow;
