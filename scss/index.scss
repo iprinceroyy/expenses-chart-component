@@ -34,13 +34,15 @@ $fw-700: 700;
 
 /*  Main  */
 
-.container {
+body {
     background-color: $cream;
+}
+
+.container {
     font-family: $font-family;
     font-size: $font-size;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
