@@ -44,7 +44,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-radius: 10px;
+  border-radius: 20px;
   color: #f8e9dd;
   padding-block: max(3vh, 1rem);
   padding-inline: max(2vw, 1rem);
