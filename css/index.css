@@ -19,13 +19,22 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   line-height: 1.5;
+}
+
+.sr-only {
+  font-size: 0;
 }
 
 .card {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 992px) {
+  .card {
+    width: 35vw;
+  }
 }
 
 .balance {
@@ -35,7 +44,8 @@
   justify-content: space-between;
   border-radius: 10px;
   color: #f8e9dd;
-  padding: 1rem;
+  padding-block: max(3vh, 1rem);
+  padding-inline: max(2vw, 1rem);
 }
 .balance h2 {
   font-size: 1rem;
@@ -43,22 +53,26 @@
 }
 .balance .amt {
   display: block;
-  font-size: 1.125rem;
+  font-size: clamp(1.13rem, 1.59vw + 0.73rem, 2rem);
   font-weight: 700;
   color: #fff;
 }
 .balance .logo {
-  width: 3rem;
+  width: max(4.5vw, 3rem);
 }
 
 /*  Spending  */
 .spending {
   background-color: white;
-  margin: 1rem 0;
-  padding: 1rem;
+  margin-block: max(2vh, 1rem);
+  padding-block: max(2vh, 1rem);
+  padding-inline: max(2vw, 1rem);
   color: #382314;
   border-radius: 10px;
   overflow: hidden;
+}
+.spending h3 {
+  font-size: clamp(1.13rem, 1.59vw + 0.73rem, 2rem);
 }
 
 .analysis {
@@ -77,10 +91,9 @@
   justify-content: flex-end;
 }
 .analysis .bar {
-  width: 2.1rem;
+  width: max(3.5vw, 2.1rem);
   background-color: #ec775f;
   border-radius: 3px;
-  font-size: 1rem;
   text-align: center;
 }
 .analysis .bar + p {
@@ -116,26 +129,26 @@
   animation-fill-mode: forwards;
 }
 .analysis .mon {
-  height: 3.5rem;
+  height: 3rem;
 }
 .analysis .tue {
-  height: 7rem;
+  height: 6rem;
 }
 .analysis .wed {
-  height: 10rem;
+  height: 9rem;
   background-color: #76b5bc;
 }
 .analysis .thu {
-  height: 6rem;
+  height: 5rem;
 }
 .analysis .fri {
-  height: 4.5rem;
+  height: 4rem;
 }
 .analysis .sat {
-  height: 8rem;
+  height: 7rem;
 }
 .analysis .sun {
-  height: 5rem;
+  height: 4rem;
 }
 
 @keyframes grow {
@@ -182,7 +195,7 @@ hr + p {
   align-items: center;
 }
 .total h4 {
-  font-size: 1.975rem;
+  font-size: clamp(1.13rem, 3.41vw + 0.27rem, 3rem);
   font-weight: 700;
 }
 .total p {
@@ -194,6 +207,16 @@ hr + p {
   display: block;
   font-weight: 400;
   opacity: 0.6;
+}
+
+/* Footer */
+.attribution {
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+  font-size: 1.125rem;
+}
+.attribution a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=index.css.map */

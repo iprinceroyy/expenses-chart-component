@@ -43,13 +43,20 @@ $fw-700: 700;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     line-height: 1.5;
+}
+
+.sr-only {
+    font-size: 0;
 }
 
 .card {
     display: flex;
     flex-direction: column;
+    @media (min-width: 992px) {
+        width: calc(100vw + -65vw);
+    }
 }
 
 .balance {
@@ -59,19 +66,20 @@ $fw-700: 700;
     justify-content: space-between;
     border-radius: 10px;
     color: $cream;
-    padding: 1rem;
+    padding-block: max(3vh, 1rem);
+    padding-inline: max(2vw, 1rem);
     h2 {
         font-size: 1rem;
         font-weight: $fw-400;
     }
     .amt {
         display: block;
-        font-size: $font-size;
+        font-size: clamp(1.13rem, 1.59vw + 0.73rem, 2rem);
         font-weight: $fw-700;
         color: #fff;
     }
     .logo {
-        width: 3rem;
+        width: max(4.5vw, 3rem);
     }
 }
 
@@ -80,11 +88,15 @@ $fw-700: 700;
 
 .spending {
     background-color: white;
-    margin: 1rem 0;
-    padding: 1rem;
+    margin-block: max(2vh, 1rem);
+    padding-block: max(2vh, 1rem);
+    padding-inline: max(2vw, 1rem);
     color: $dark-brown;
     border-radius: 10px;
     overflow: hidden;
+    h3 {
+        font-size: clamp(1.13rem, 1.59vw + 0.73rem, 2rem);
+    }
 }
 
 .analysis {
@@ -100,10 +112,9 @@ $fw-700: 700;
         justify-content: flex-end;
     }
     .bar {
-        width: 2.1rem;
+        width: max(3.5vw, 2.1rem);
         background-color: $soft-red;
         border-radius: 3px;
-        font-size: 1rem;
         text-align: center;
         +p {
             font-size: 1rem;
@@ -143,26 +154,26 @@ $fw-700: 700;
         animation-fill-mode: forwards;
     }
     .mon {
-        height: 3.5rem;
+        height: 3rem;
     }
     .tue {
-        height: 7rem;
+        height: 6rem;
     }
     .wed {
-        height: 10rem;
+        height: 9rem;
         background-color: $cyan;
     }
     .thu {
-        height: 6rem;
+        height: 5rem;
     }
     .fri {
-        height: 4.5rem;
+        height: 4rem;
     }
     .sat {
-        height: 8rem;
+        height: 7rem;
     }
     .sun {
-        height: 5rem;
+        height: 4rem;
     }
 }
 
@@ -217,7 +228,7 @@ hr {
     justify-content: space-between;
     align-items: center;
     h4 {
-        font-size: calc($font-size + 0.85rem);
+        font-size: clamp(1.13rem, 3.41vw + 0.27rem, 3rem);
         font-weight: $fw-700;
     }
     p {
@@ -229,5 +240,17 @@ hr {
         display: block;
         font-weight: $fw-400;
         opacity: 0.6;
+    }
+}
+
+
+/* Footer */
+
+.attribution {
+    font-family: $font-family;
+    text-align: center;
+    font-size: $font-size;
+    a {
+        text-decoration: none;
     }
 }
